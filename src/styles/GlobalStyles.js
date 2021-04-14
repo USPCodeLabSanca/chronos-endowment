@@ -3,12 +3,6 @@ import { createGlobalStyle } from "styled-components"
 import Fonts from './fonts'
 
 const GlobalStyles = createGlobalStyle`
-    /* http://meyerweb.com/eric/tools/css/reset/
-    v2.0 | 20110126
-    License: none (public domain)
-    */
-
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap');
 
     :root {
         --navbar-height: 120px;
@@ -22,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
+    a, abbr, acronym, address, big, button, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
     small, strike, strong, sub, sup, tt, var,
     b, u, i, center,
@@ -36,8 +30,9 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
+    font-size: 100%;
+    font-family: 'Work Sans', sans-serif;
     vertical-align: baseline;
     }
     /* HTML5 display-role reset for older browsers */
@@ -70,7 +65,6 @@ const GlobalStyles = createGlobalStyle`
     body {
     line-height: 1;
     font-size: 100%;
-    font-family: 'Montserrat', sans-serif;
     }
     img {
     display: block;
