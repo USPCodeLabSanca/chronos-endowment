@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     License: none (public domain)
     */
 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap');
 
     :root {
         --navbar-height: 120px;
@@ -69,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
     body {
     line-height: 1;
     font-size: 100%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     }
     img {
     display: block;

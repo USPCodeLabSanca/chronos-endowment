@@ -156,9 +156,10 @@ function ChronosSymbolGraphism() {
                     variants={icon}
                     initial="hidden"
                     animate="visible"
-                    transition={{
-                    default: { duration: 2, ease: "easeInOut" },
-                    fill: { duration: 2, ease: [1, 0, 0.8, 1] }
+                    transition=
+                    {{
+                        default: {delay: 2, duration: 2, ease: "easeInOut" },
+                        fill: {delay: 2, duration: 2, ease: [1, 0, 0.8, 1] }
                     }}
                 >
                     <path
@@ -190,9 +191,10 @@ function ChronosSymbolGraphism() {
                     variants={icon}
                     initial="hidden"
                     animate="visible"
-                    transition={{
-                    default: { duration: 2, ease: "easeInOut" },
-                    fill: { duration: 2, ease: [1, 0, 0.8, 1] }
+                    transition=
+                    {{
+                        default: {delay: 1, duration: 2, ease: "easeInOut" },
+                        fill: {delay: 1, duration: 2, ease: [1, 0, 0.8, 1] }
                     }}
                     />
                 </g>
