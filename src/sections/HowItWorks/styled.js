@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
-import donation from '../../images/donation.png';
-import globe from '../../images/globe.png';
-import piggyBank from '../../images/piggy-bank.png';
+import captacao from '../../images/SVG/captacao.svg'
+import impacto from '../../images/SVG/impacto.svg'
+import perpetuidade from '../../images/SVG/perpetuidade.svg'
 
 export const HowItWorks = styled.section`
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     position: relative;
@@ -16,9 +16,9 @@ export const HowItWorks = styled.section`
 export const Title = styled.h1`
     margin-bottom: 5rem;
     text-transform: uppercase; 
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--light-blue);
-    font-weight: 800;
+    font-weight: 700;
 `
 
 export const SecondTitle = styled.h2`
@@ -70,30 +70,31 @@ export const ContentWrapper = styled.div`
     display: grid;
     grid: 1fr 0.5fr 2fr/1fr 1fr 1fr;
     column-gap: 10%;
+    margin: 3rem 0;
 `
 
-export const Donation = styled.div`
+export const Captacao = styled.div`
     width: 10rem;
     height: 10rem;
-    background-image: url(${donation});
+    background-image: url(${captacao});
     background-position: center; 
     background-size: cover;
     justify-self: center;
 `
 
-export const Globe = styled.div`
+export const Impacto = styled.div`
     width: 10rem;
     height: 10rem;
-    background-image: url(${globe});
+    background-image: url(${impacto});
     background-position: center; 
     background-size: cover;
     justify-self: center;
 `
 
-export const PiggyBank = styled.div`
+export const Perpetuidade = styled.div`
     width: 10rem;
     height: 10rem;
-    background-image: url(${piggyBank});
+    background-image: url(${perpetuidade});
     background-position: center; 
     background-size: cover;
     justify-self: center;

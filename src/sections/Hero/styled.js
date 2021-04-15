@@ -44,6 +44,10 @@ export const Title = styled.h1`
     margin-bottom: 6.25rem;
 `
 
+export const Bold = styled.span`
+    font-weight: 800;
+`
+
 export const ImageWrapper = styled.div`
     position: absolute;
     width: 150vh;

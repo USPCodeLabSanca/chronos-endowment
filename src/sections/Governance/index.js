@@ -10,9 +10,9 @@ const Governance = () => {
     <S.Governance>
         <S.Graphism/>
         <S.Wrapper>
-            <S.Title>Sobre Nós</S.Title>
+            <S.Title>Governança</S.Title>
             <S.TextTitle>Nossa associação possui uma estrutura robusta e transparente de governança corporativa</S.TextTitle>
-            <S.govImg src={governanceSVG}/>
+            <S.GovImg src={governanceSVG}/>
             <Button
                     fontColor='#13294B'
                     backgroundColor='#fff'

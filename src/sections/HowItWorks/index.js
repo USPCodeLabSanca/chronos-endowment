@@ -8,9 +8,9 @@ const HowItWorks = () => {
         <S.Wrapper>
         <S.Title>Como funciona?</S.Title>
         <S.ContentWrapper>
-            <S.Donation/>
-            <S.Globe/>
-            <S.PiggyBank/>
+            <S.Captacao/>
+            <S.Impacto/>
+            <S.Perpetuidade/>
             <S.SecondTitle>Captação</S.SecondTitle>
             <S.SecondTitle>Impacto</S.SecondTitle>
             <S.SecondTitle>Perpetuidade</S.SecondTitle>

@@ -27,8 +27,8 @@ export const Graphism = styled(ChronosGraphism)`
 export const Title = styled.h1`
     text-transform: uppercase; 
     font-size: 5rem;
-    color: var(--blue);
-    font-weight: 800;
+    color: var(--light-blue);
+    font-weight: 700;
 `
 
 export const TextTitle = styled.h2`
@@ -67,7 +67,7 @@ export const ContentWrapper = styled.div`
     row-gap: 10%;
 `
 
-export const govImg = styled.img`
+export const GovImg = styled.img`
     position: relative;
     width: 80%;
     height: auto;

@@ -25,8 +25,8 @@ export const Container = styled.div`
 export const Title = styled.h1`
     margin: 0 0 2rem 0;
     text-transform: uppercase; 
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 5rem;
+    font-weight: 700;
     color: var(--light-blue);
 `
 

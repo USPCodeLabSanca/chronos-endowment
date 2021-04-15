@@ -28,17 +28,16 @@ export const Title = styled.h1`
     text-transform: uppercase; 
     font-size: 5rem;
     color: white;
-    font-weight: 800;
+    font-weight: 700;
 `
 
 export const SecondTitle = styled.h1`
     position: relative;
     align-self: flex-start;
     margin: 5rem 0;
-    text-transform: uppercase; 
     font-size: 4rem;
     color: white;
-    font-weight: 800;
+    font-weight: 700;
 
     &::before{
         display: block;

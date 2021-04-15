@@ -12,7 +12,7 @@ const Hero = () => {
             <S.LogoGraphism/>
           </S.ImageWrapper>
           <S.Wrapper>
-            <S.Title>Somos o <b>Fundo Patrimonial</b> da USP São Carlos</S.Title>
+            <S.Title>Somos o <S.Bold>Fundo Patrimonial</S.Bold> da USP São Carlos</S.Title>
             <Button fontSize='2rem' fontColor='#FFFFFF' width='45%'>Quero Doar</Button>
             <Button fontSize='2rem' fontColor='#FFFFFF' width='45%'>Quero ser voluntário</Button>
           </S.Wrapper> 
