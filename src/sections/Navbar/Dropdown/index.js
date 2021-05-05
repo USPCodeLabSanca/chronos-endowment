@@ -1,34 +1,20 @@
 import React, { useState } from 'react'
 import * as S from './styled'
 
-import { MenuItems } from './MenuItems'
+const Dropdown = ({children, name}) => {
 
-function Dropdown() {
-  const [click, setClick] = useState(false);
+    const [open, setOpen] = useState(false)
 
-  const handleClick = () => setClick(!click);
-
-  return (
-    <>
-      <S.List
-        onClick={handleClick}
-        className={click ? 'clicked' : ''}
-      >
-        {MenuItems.map((item, index) => {
-          return (
-            <S.Item key={index}>
-              <S.Link
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </S.Link>
-            </S.Item>
-          );
-        })}
-      </S.List>
-    </>
-  );
+    return (
+        <S.Menu onClick={() => setOpen(!open)}>
+            {name}
+            {open &&
+                <S.List>
+                    {children}
+                </S.List>
+            }
+        </S.Menu>
+    );
 }
 
 export default Dropdown;
