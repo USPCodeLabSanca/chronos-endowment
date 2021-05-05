@@ -6,15 +6,27 @@ const Dropdown = ({children, name}) => {
     const [open, setOpen] = useState(false)
 
     return (
-        <S.Menu onClick={() => setOpen(!open)}>
+        <S.NavbarButton onClick={() => setOpen(!open)}>
             {name}
             {open &&
                 <S.List>
                     {children}
                 </S.List>
             }
-        </S.Menu>
+        </S.NavbarButton>
     );
 }
 
-export default Dropdown;
+const DropdownItem = ({children}) => {
+  
+    return (
+        <S.Item>
+            {children}
+        </S.Item>
+    )
+}
+
+export {
+    Dropdown, 
+    DropdownItem
+}

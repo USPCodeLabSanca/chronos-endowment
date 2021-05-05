@@ -1,24 +1,6 @@
 import styled from "styled-components"
 
-export const List = styled.ul`
-    width: 100%;
-    position: absolute;
-    top: var(--navbar-height);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    overflow: hidden;
-
-    background: white;
-    text-transform: uppercase; 
-    font-size: 1.2rem;
-
-    &.clicked{
-        display: none;
-    }
-`
-
-export const Item = styled.li`
+export const Item = styled.a`
     position: relative;
     display: flex;
     justify-content: center;
@@ -39,4 +21,25 @@ export const Item = styled.li`
     }
 `
 
-export const Link = styled.a``
+export const NavbarButton = styled(Item)`
+    justify-content: space-evenly;
+    height: 100%;
+`
+
+export const List = styled.ul`
+    width: 100%;
+    position: absolute;
+    top: var(--navbar-height);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+
+    background: white;
+    text-transform: uppercase; 
+    font-size: 1.2rem;
+
+    &.clicked{
+        display: none;
+    }
+`
