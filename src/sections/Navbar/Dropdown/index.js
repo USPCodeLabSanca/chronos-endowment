@@ -5,15 +5,20 @@ const Dropdown = ({children, name}) => {
 
     const [open, setOpen] = useState(false)
 
+    const [dropdown, setDropdown] = useState(false)
+
     return (
-        <S.NavbarButton onClick={() => setOpen(!open)}>
+        <S.NavbarMenu 
+            onClick={() => setOpen(!open)}
+            onMouseLeave={() => setOpen(false)}
+        >
             {name}
             {open &&
                 <S.List>
                     {children}
                 </S.List>
             }
-        </S.NavbarButton>
+        </S.NavbarMenu>
     );
 }
 

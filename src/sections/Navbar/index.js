@@ -1,7 +1,6 @@
 import React from 'react'
 import * as S from "./styled"
 
-import MenuItem from '../../components/MenuItem'
 import {Dropdown, DropdownItem} from './Dropdown'
 
 const Navbar = () => {

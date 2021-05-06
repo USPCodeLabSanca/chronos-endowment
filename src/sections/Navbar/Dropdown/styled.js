@@ -9,6 +9,7 @@ export const Item = styled.a`
     height: var(--navbar-height);
     flex-grow: 1;
 
+    cursor: pointer;
     background: white;
     text-transform: uppercase; 
     color: var(--blue);
@@ -21,7 +22,7 @@ export const Item = styled.a`
     }
 `
 
-export const NavbarButton = styled(Item)`
+export const NavbarMenu = styled(Item)`
     justify-content: space-evenly;
     height: 100%;
 `

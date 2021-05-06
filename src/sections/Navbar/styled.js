@@ -41,6 +41,7 @@ export const Menu = styled.a`
     height: 100%;
     flex-grow: 1;
 
+    cursor: pointer;
     background: white;
     text-transform: uppercase; 
     color: var(--blue);
