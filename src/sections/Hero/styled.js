@@ -98,9 +98,9 @@ export const LogoGraphism = styled(ChronosSymbolGraphism)`
 
 export const LogoAnimation = styled.div`
     position: absolute;
-    width: 90%;
-    height: 90%;
-    left: 50%;
+    width: 70vw;
+    height: 70vw;
+    right: -50%;
     top: 50%;
     transform: translate(-50%,-50%);
 `

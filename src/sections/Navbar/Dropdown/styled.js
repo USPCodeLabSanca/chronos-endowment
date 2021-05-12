@@ -25,6 +25,7 @@ export const Item = styled.a`
 export const NavbarMenu = styled(Item)`
     justify-content: space-evenly;
     height: 100%;
+    perspective: 1000px;
 `
 
 export const List = styled.ul`
@@ -40,7 +41,24 @@ export const List = styled.ul`
     text-transform: uppercase; 
     font-size: 1.2rem;
 
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    perspective-origin: top center;
+    animation: rotateMenu 700ms cubic-bezier(.77,0,.18,1); 
+
     &.clicked{
         display: none;
+    }
+
+    @keyframes rotateMenu {
+        0% {
+            transform: rotateX(-85deg)
+        }
+        70% {
+            transform: rotateX(20deg) 
+        }
+        100% {
+            transform: rotateX(0deg) 
+        }
     }
 `
