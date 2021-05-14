@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("./images/caaso.jpeg");
+  background-size: cover;
+  color: white;
+  font-family: "Work Sans";
+}
+
+.mobile {
+  display: none !important;
+}
+
+.desk {
+  display: block;
+}
+
+.blue-overlay {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(19, 41, 75, 0.93);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  flex: 2;
+  /* border: 1px solid #f09; */
+  text-align: center;
+  padding: 5%;
+  padding-right: 0;
+}
+
+.info {
+  flex: 1;
+  padding: 5%;
+  padding-left: 3%;
+  /* border: 1px solid red; */
+}
+
+.logo-img {
+  width: 85%;
+  /* border: 1px solid black; */
+}
+
+.slogan {
+  font-size: 1.45rem;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid yellow; */
+  margin-bottom: 20%;
+}
+
+.status .text {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  /* border: 1px solid yellow; */
+  text-align: center;
+  order: 1;
+}
+
+.gear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  order: 2;
+  /* border: 1px solid green; */
+}
+
+.gear img {
+  width: 70px;
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 17px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid white;
+  border-radius: 10px;
+  display: block;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.button img {
+  vertical-align: top;
+  margin-top: 4.5px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+.button span {
+  vertical-align: top;
+  /* border: 1px solid red; */
+  display: inline-flex;
+  /* height: 100%; */
+  align-items: center;
+  /* flex: 1; */
+  height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .status .text {
+    font-size: 2rem;
+  }
+  .gear img {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .mobile.status {
+    flex: 1;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desk {
+    display: none !important;
+  }
+
+  .status .text {
+    font-size: 1.8rem;
+  }
+  .gear {
+    margin-top: 10px;
+  }
+
+  .gear img {
+    width: 70px;
+  }
+  .slogan {
+    font-size: 1.2rem;
+  }
+  .blue-overlay {
+    flex-direction: column;
+  }
+
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo-img {
+    width: 75%;
+  }
+
+  .slogan {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .info {
+    padding-top: 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .status {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .gear {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    padding-top: 5%;
+  }
+}
